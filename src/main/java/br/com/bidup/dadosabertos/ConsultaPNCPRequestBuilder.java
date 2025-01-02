@@ -7,12 +7,12 @@ public class ConsultaPNCPRequestBuilder {
 
     private final Map<String, String> params = new HashMap<>();
 
-    private ConsultaPNCPRequestBuilder paginate(int pagina) {
+    public ConsultaPNCPRequestBuilder paginate(int pagina) {
         params.put("pagina", String.valueOf(pagina));
         return this;
     }
 
-    private ConsultaPNCPRequestBuilder tamanhoPagina(int tamanhoPagina) {
+    public ConsultaPNCPRequestBuilder tamanhoPagina(int tamanhoPagina) {
         params.put("tamanhoPagina", String.valueOf(tamanhoPagina));
         return this;
     }
