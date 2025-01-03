@@ -19,7 +19,7 @@ public class ConsultaDadosAbertosController {
     }
 
     @GetMapping("/contratos")
-    public List<Contratos> consulta(
+    public List<ContratosDto> consulta(
             @RequestParam(defaultValue = "1") int pagina,
             @RequestParam(defaultValue = "500") int tamanhoPagina,
             @RequestParam(defaultValue = "2024-01-01") String dataInicial,
